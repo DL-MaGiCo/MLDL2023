@@ -30,3 +30,6 @@ You can choose the optimizer using *optim*, the learning rate using *lr* and the
 You can choose the number of epochs using *max_epochs* and run the experiment running
 > python main.py --train_path /path/to/datasets/gsv_xs --val_path /path/to/datasets/tokyo_xs/test --test_path /path/to/datasets/tokyo_xs/test --max_epochs NumberEpochs
 
+### Learning rate and Weight Decay hyperparameters
+You can choose the value of Learning Rate using *lr* and weight decay value using *wd* and run the experiment running
+> python main.py --train_path /path/to/datasets/gsv_xs --val_path /path/to/datasets/tokyo_xs/test --test_path /path/to/datasets/tokyo_xs/test --lr lr --wd wd
