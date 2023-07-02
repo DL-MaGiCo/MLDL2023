@@ -47,11 +47,9 @@ def parse_arguments():
     parser.add_argument("--checkpoint", type=str, default=None,
                         help="checkpoint path")
     parser.add_argument("--lr", type=float, default=0.001,
-                        help="Learning rate for the optimizer. By default, 1e-3",
-                        choices=[0.01, 0.001, 0.0001, 0.00001])
+                        help="Learning rate for the optimizer. By default, 1e-3")
     parser.add_argument("--wd", type=float, default=0.001,
-                        help="Weight decay for the optimizer. By default, 1e-3",
-                        choices=[0.01, 0.001, 0.0001, 0.00001])
+                        help="Weight decay for the optimizer. By default, 1e-3")
 
 
     args = parser.parse_args()
