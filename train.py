@@ -165,7 +165,7 @@ if __name__ == '__main__':
         reload_dataloaders_every_n_epochs=1,
         log_every_n_steps=20,
     )
-    print(model)
+    
     print(f"LR: {args.lr}, WD: {args.wd}")
     trainer.validate(model=model, dataloaders=val_loader, ckpt_path=args.checkpoint)
     trainer.fit(model=model, train_dataloaders=train_loader, val_dataloaders=val_loader, ckpt_path=args.checkpoint)
