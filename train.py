@@ -107,7 +107,7 @@ class LightningModel(pl.LightningModule):
 
       recalls, recalls_str = utils.compute_recalls(
             inference_dataset, queries_descriptors, database_descriptors,
-            trainer.logger.log_dir, num_preds_to_save, self.save_only_wrong_preds
+            self.logger.log_dir, num_preds_to_save, self.save_only_wrong_preds
       )
       print(recalls_str)
       logging.info(f"Epoch[{self.current_epoch:02d}]): " + #
