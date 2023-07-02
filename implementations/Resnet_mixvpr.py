@@ -2,6 +2,7 @@ import mixvpr
 import torch
 import torch.nn as nn
 import torchvision
+from implementations import mixvpr
 
 class ResNetMixVPR(nn.Module):
   def __init__(self):
