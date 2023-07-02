@@ -6,6 +6,7 @@ This project focuses on the design choices of a DL model for the task of Visual 
 <b>First steps</b>
 1. Download datasets by running the script *download_datasets.py*
 2. Install the required packages by running
+   
    > pip install -r requirements.txt
 
 ## Run an experiment
